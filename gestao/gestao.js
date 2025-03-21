@@ -1,6 +1,6 @@
 // URL do back-end
 const apiUrl = 'http://localhost:3000/usuarios';
-
+// Deixarei alguns comentários, pois o código não será feito só por mim. 
 // Função para carregar os usuários na tabela
 async function loadUsers() {
     const response = await fetch(apiUrl);

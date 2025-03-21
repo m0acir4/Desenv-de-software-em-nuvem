@@ -4,15 +4,15 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const bcrypt = require('bcrypt'); // Para criptografar senhas
-const jwt = require('jsonwebtoken'); // Para gerar tokens JWT
+const jwt = require('jsonwebtoken');
 
 const app = express();
 const port = process.env.PORT || 3000;
-
+// deixarei alguns comentários durante o código, pois ele não será feito só por mim, então para os outros alunos ficarem cientes do que cada coisa faz e o que eu estou fazendo. 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-    origin: '*', // Substitua pela origem do seu front-end
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }));
@@ -62,7 +62,7 @@ app.post('/usuarios', async (req, res) => {
 app.post('/login', async (req, res) => {
     const { email, senha } = req.body;
 
-    console.log('Email:', email); // Adicione logs para verificar os dados
+    console.log('Email:', email);
     console.log('Senha:', senha);
 
     try {

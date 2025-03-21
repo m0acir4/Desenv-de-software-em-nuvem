@@ -1,6 +1,6 @@
 document.getElementById('cadastroForm').addEventListener('submit', async (event) => {
     event.preventDefault();
-
+// Deixarei alguns comentários no código, pois ele não foi feito só ppor mim. 
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 

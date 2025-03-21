@@ -1,6 +1,6 @@
 document.getElementById('loginForm').addEventListener('submit', async (event) => {
     event.preventDefault();
-
+// deixarei alguns comentários, pois o código não será feito só por mim. 
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 
@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 
             alert('Login bem-sucedido!');
             // Redirecionar para a tela de gestão
-            window.location.href = '/gestao/gestao.html';  // Atualize para o nome correto da sua tela de gestão
+            window.location.href = '/gestao/gestao.html'; 
         } else {
             alert(result.message || 'Erro ao fazer login');
         }
