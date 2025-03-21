@@ -16,6 +16,7 @@ document.getElementById('cadastroForm').addEventListener('submit', async (event)
         const result = await response.json();
     if (response.ok) {
         alert(result.message);
+        window.location.href = '/Login/login.html';
         document.getElementById('email').value = '';
         document.getElementById('senha').value = '';
     } else {
