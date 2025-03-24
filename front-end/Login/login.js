@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 
             alert('Login bem-sucedido!');
             // Redirecionar para a tela de gestão
-            window.location.href = '/gestao/gestao.html'; 
+            window.location.href = '/front-end/gestao/gestao.html'; 
         } else {
             alert(result.message || 'Erro ao fazer login');
         }

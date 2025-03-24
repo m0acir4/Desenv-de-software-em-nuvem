@@ -8,6 +8,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/m0acir4/Desenv-de-software-em-nuvem.git"
+  }
+  ,"engines": {
+    "node": "14.x"
   },
   "author": "",
   "license": "ISC",
