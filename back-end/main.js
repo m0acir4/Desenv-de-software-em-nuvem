@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const bcrypt = require('bcrypt'); // Para criptografar senhas
+const bcrypt = require('bcryptjs'); // Para criptografar senhas
 const jwt = require('jsonwebtoken');
 
 const app = express();
